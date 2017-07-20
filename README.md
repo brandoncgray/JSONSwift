@@ -191,7 +191,7 @@ JSONSetup.set(option: .titlecased)
 
 ```swift
 JSONRegistration.setup(company: "Test Company", registrationIDs:
-            ["c3d4fc2d45cc3874265acedfd0c7057ee7939cf0719e32bc72a31abc8b3a1e5b"]
+            ["210a61f6c75c2dcd0cb663281eace40c1690810422498a04f4e2ab29216199a3"]
         )
 ```
 ```swift
