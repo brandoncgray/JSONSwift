@@ -7,7 +7,7 @@
 <!--[![Slack Status](http://vapor.team/badge.svg)](http://slack.qutheory.io)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](http://www.twitter.com/PerfectRealityA)
 
-###This repository contains the framework and example projects.
+### This repository contains the framework and example projects.
 
 ## What is JSONSwift
 
@@ -61,7 +61,7 @@ allData.save(encrypt: true)
 ```
 
 ## Notice!
-> ###I am currently in the process of making the JSONSwift website, the links to www.JSONSwift.com are not active, however, you can still download and try out JSONSwift! If you need a registration key you can email me at noreply@jsonswift.com; send me your company name (what the AppStore uses) and you app's bundleID and I will create a key for you.
+> ### I am currently in the process of making the JSONSwift website, the links to www.JSONSwift.com are not active, however, you can still download and try out JSONSwift! If you need a registration key you can email me at noreply@jsonswift.com; send me your company name (what the AppStore uses) and you app's bundleID and I will create a key for you.
 
 ## Documentation
 
@@ -114,7 +114,7 @@ Type `cd ` and drag the folder you downloaded into your open Terminal window. Th
 > Don't forget to make the file executable! `chmod +x <file path to GenerateCommonCryptoModule>`  
 The script depends on xcrun to find the SDK directory
 
-####Method 1: Easy Way
+#### Method 1: Easy Way
 This will allow you to run CommonCrypto in the Simulator and Playground
 
 ##### Development Mac
@@ -124,7 +124,7 @@ This will allow you to run CommonCrypto in the Simulator and Playground
 ##### Build Server
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
 
-####Method 2: Module Map Way
+#### Method 2: Module Map Way
 This will allow you to run CommonCrypto in the Simulator only
   
 
@@ -250,9 +250,9 @@ Creating a model is as simple as creating a class and adding JSON as the supercl
 class myClass:JSON {}
 ```
 
-####Example Classes
+#### Example Classes
 
-#####Simple Class
+##### Simple Class
 >The base class does not have to be a subclass of the JSON class, nested classes can contain the JSON super class.
 
 * This class is based on the JSON from the [json.org](http://json.org/example.html) example. An example of this is in the ExampleJSON & ExampleJSONmacOS Xcode project.
@@ -354,7 +354,7 @@ print("Convert class to JSON dictionary as String:\n",
 
 
 ---
-##Full Example
+## Full Example
 This is what is found in the JSON.h file in JSON.Framework
 
 >This shows examples of every feature
