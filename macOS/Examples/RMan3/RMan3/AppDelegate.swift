@@ -22,6 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // EncryptDatabase set to true will force encrypt all data
         //JSONSetup.encryptDatabase(true)
         
+        // Load saved data
+        EmployeeModel.data.load()
+
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {

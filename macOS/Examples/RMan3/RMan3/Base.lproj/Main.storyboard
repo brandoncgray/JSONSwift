@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -852,11 +852,6 @@ CA
                 <arrayController objectClassName="RMan3.Employee" id="YeH-Lp-H5F">
                     <connections>
                         <binding destination="5gI-5U-AMq" name="contentArray" keyPath="employees" id="frl-cQ-aVF"/>
-                    </connections>
-                </arrayController>
-                <arrayController mode="entity" entityName="EmployeeData" automaticallyPreparesContent="YES" id="cy1-he-fH2" userLabel="Data Controller">
-                    <connections>
-                        <binding destination="YeH-Lp-H5F" name="managedObjectContext" keyPath="managedObjectContext" id="HWw-vu-XPx"/>
                     </connections>
                 </arrayController>
             </objects>
