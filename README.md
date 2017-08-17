@@ -121,6 +121,9 @@ This will allow you to run CommonCrypto in the Simulator and Playground
 > If using macOS `sudo ./GenerateCommonCryptoModule macosx10.12` remember to check the version on macOS you are running
 
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
+
+`sudo ./GenerateCommonCryptoModule iphoneos10.3`
+
 ##### Build Server
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
 
@@ -134,7 +137,7 @@ This will allow you to run CommonCrypto in the Simulator only
 1. Change the version number where the "X" is in the second step, use the version number you got from running `xcodebuild -showsdks`  
 2. Notice the solo period “.” after the `iphonesimulator10.X`? That period is required.
 3. Run the script  
-`./GenerateCommonCryptoModule iphonesimulator10.X .` Don't forget to replace the "X"
+`./GenerateCommonCryptoModule iphonesimulatorXX.X .` Don't forget to replace the "X"
 4. Once the script is run you will see a folder called CommonCrypto and it will contain a module.map file
 5. Copy the file to your Xcode project folder (same location as the Xcode project file)
 
@@ -241,6 +244,20 @@ JSONSetup.use(unixTimestamp: true)
 	let jsonSendData = allData.toDict
 	JSONSetup.use(unixTimestamp: false)
 	```
+	
+### Errors
+
+If you run into a code signing issue us the **--deep** flag in the **Signing** section of your projects build settings section
+> I havent had to do this with iOS but I have to do it with macOS you may need to do it with iOS if the AppStore has an issue with it.
+
+```
+//:configuration = Debug
+OTHER_CODE_SIGN_FLAGS = --deep
+
+//:configuration = Release
+OTHER_CODE_SIGN_FLAGS = --deep
+```
+
 	
 ---
 ### Creating a Model
