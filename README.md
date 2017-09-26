@@ -118,11 +118,11 @@ The script depends on xcrun to find the SDK directory
 This will allow you to run CommonCrypto in the Simulator and Playground
 
 ##### Development Mac
-> If using macOS `sudo ./GenerateCommonCryptoModule macosx10.12` remember to check the version on macOS you are running
+> If using macOS `sudo ./GenerateCommonCryptoModule macosx10.13` remember to check the version on macOS you are running
 
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
 
-`sudo ./GenerateCommonCryptoModule iphoneos10.3`
+`sudo ./GenerateCommonCryptoModule iphoneos11.0`
 
 ##### Build Server
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
