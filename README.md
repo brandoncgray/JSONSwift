@@ -1,5 +1,6 @@
 # [JSONSWIFT](http://www.jsonswift.com) - A JSON Framework for Swift
 ###### Developed by: Brandon Gray @ Perfect Reality Apps, LLC
+![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
 ![Swift](http://img.shields.io/badge/swift-3.1-brightgreen.svg)
 ![Swift](http://img.shields.io/badge/swift-3.0.2-yellow.svg)
 ![iOS](https://img.shields.io/badge/iOS-Supported-brightgreen.svg)

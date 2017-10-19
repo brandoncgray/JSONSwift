@@ -2,8 +2,6 @@
 //  ModelFile.swift
 //  RMan3
 //
-//  Created by Court on 2017-06-03.
-//  Copyright © 2017 Forte Development Inc. All rights reserved.
 //
 
 import Foundation

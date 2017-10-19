@@ -4,9 +4,8 @@ import Cocoa
 
 
 class ViewController: NSViewController, NSTextFieldDelegate, NSTableViewDelegate {
-    var employees = EmployeeModel.data.employees
+    @objc var employees = EmployeeModel.data.employees
     var index = Int()
-        
     @IBOutlet weak var amount: NSTextField!
     
     override func viewDidLoad() {
