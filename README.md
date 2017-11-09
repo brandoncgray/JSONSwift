@@ -1,10 +1,10 @@
 # [JSONSWIFT](http://www.jsonswift.com) - A JSON Framework for Swift
 ###### Developed by: Brandon Gray @ Perfect Reality Apps, LLC
-![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
-![Swift](http://img.shields.io/badge/swift-3.1-brightgreen.svg)
-![Swift](http://img.shields.io/badge/swift-3.0.2-yellow.svg)
 ![iOS](https://img.shields.io/badge/iOS-Supported-brightgreen.svg)
+![Swift](http://img.shields.io/badge/swift-4.0.2 -- 4.0 -- 3.1-brightgreen.svg)
 ![macOS](https://img.shields.io/badge/macOS-Supported-brightgreen.svg)
+![macOS](https://img.shields.io/badge/macOS-10.12 -- 10.13-brightgreen.svg)
+
 <!--[![Slack Status](http://vapor.team/badge.svg)](http://slack.qutheory.io)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](http://www.twitter.com/PerfectRealityA)
 
@@ -123,7 +123,7 @@ This will allow you to run CommonCrypto in the Simulator and Playground
 
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
 
-`sudo ./GenerateCommonCryptoModule iphoneos11.0`
+`sudo ./GenerateCommonCryptoModule iphoneos11.1`
 
 ##### Build Server
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
