@@ -125,7 +125,15 @@ class ViewController: UIViewController {
         allData.load(didLoad: { (bool) in
             print("Callback didLoad:",bool)
         })
-        print(allData.glossary.glossDiv.glossList.glossEntry[0].abbrev)
+//        print(allData.glossary.glossDiv.glossList.glossEntry[0].abbrev)
+        
+        print("\n Test -",allData.toJSONDict,"\n")
+
+        allData.JSONtoClass(dict: jsonDataString2.JSONToDictionary)
+        dump(allData)
+        print("\n Test -",allData.toJSONDict,"\n")
+
+        
     }
     
     override func didReceiveMemoryWarning() {
