@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4C60EE50A399F387CC3C2692F51BFB47F602025C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4C60EE50A399F387CC3C2692F51BFB47F602025C" : 9223372036854775807,
+    "23729C147A4DD441322D4ED7F1B2A5B91FBD55F3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE4E6B4F-9E54-4BD3-A17D-1064090F7527",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4C60EE50A399F387CC3C2692F51BFB47F602025C" : "JSONSwiftGitHub\/",
+    "23729C147A4DD441322D4ED7F1B2A5B91FBD55F3" : "JSON%20Framework\/JSON\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ExampleJSON",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS\/Example\/ExampleJSON.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/brandongray\/Dropbox\/My%20Frameworks\/JSON%20Framework\/Origin",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23729C147A4DD441322D4ED7F1B2A5B91FBD55F3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/brandoncgray\/JSONSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4C60EE50A399F387CC3C2692F51BFB47F602025C"
+    }
+  ]
+}
