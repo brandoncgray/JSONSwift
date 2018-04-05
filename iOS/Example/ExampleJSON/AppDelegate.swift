@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         // EncryptDatabase set to true will force encrypt all data
-        //JSONSetup.encryptDatabase(true)
+        //JSONSetup.database(true)
         return true
     }
 

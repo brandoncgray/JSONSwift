@@ -1,9 +1,9 @@
 # [JSONSWIFT](http://www.jsonswift.com) - A JSON Framework for Swift
 ###### Developed by: Brandon Gray @ Perfect Reality Apps, LLC
 ![iOS](https://img.shields.io/badge/iOS-Supported-brightgreen.svg)
-![Swift](http://img.shields.io/badge/swift-4.0.2 -- 4.0 -- 3.1-brightgreen.svg)
+![Swift](http://img.shields.io/badge/swift-4.1, 4.0.2, 4.0, 3.1-brightgreen.svg)
 ![macOS](https://img.shields.io/badge/macOS-Supported-brightgreen.svg)
-![macOS](https://img.shields.io/badge/macOS-10.12 -- 10.13-brightgreen.svg)
+![macOS](https://img.shields.io/badge/macOS-10.13, 10.12-brightgreen.svg)
 
 <!--[![Slack Status](http://vapor.team/badge.svg)](http://slack.qutheory.io)-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](http://www.twitter.com/PerfectRealityA)
@@ -100,7 +100,7 @@ To make the CommonCrypto module visible to Xcode there are two options:
 
  > This is a different way to get the CommonCrypto.framework working, if you can't get option 1 working then use this method. This is more customizable (Expert Level).    
 
-### In Terminal
+### Setting Up JSONSwift
 
 JSONSwift uses the CommonCrypto library and Swift does not include it as a framework. So first we need to make Swift use it!   
 
@@ -115,25 +115,20 @@ Type `cd ` and drag the folder you downloaded into your open Terminal window. Th
 > Don't forget to make the file executable! `chmod +x <file path to GenerateCommonCryptoModule>`  
 The script depends on xcrun to find the SDK directory
 
-#### Method 1: Easy Way
-This will allow you to run CommonCrypto in the Simulator and Playground
+#### Step 1: Playground & Simulator
+This will allow you to run CommonCrypto in the Simulator and Playground... not Archives for iOS Devices
 
 ##### Development Mac
 > If using macOS `sudo ./GenerateCommonCryptoModule macosx10.13` remember to check the version on macOS you are running
 
 `sudo ./GenerateCommonCryptoModule iphonesimulator`
 
-`sudo ./GenerateCommonCryptoModule iphoneos11.1`
-
-##### Build Server
-`sudo ./GenerateCommonCryptoModule iphonesimulator`
-
-#### Method 2: Module Map Way
-This will allow you to run CommonCrypto in the Simulator only
+#### Step 2: Module Map 
+This will allow you to run CommonCrypto in the Simulator and iOS Device only, not Playground
   
 
 ##### Development Mac
-> If using macOS `sudo ./GenerateCommonCryptoModule macosx10.12 .` remember to check the version on macOS you are running
+> If using macOS `sudo ./GenerateCommonCryptoModule macosx10.13 .` remember to check the version on macOS you are running
 
 1. Change the version number where the "X" is in the second step, use the version number you got from running `xcodebuild -showsdks`  
 2. Notice the solo period “.” after the `iphonesimulator10.X`? That period is required.
@@ -151,7 +146,7 @@ This will allow you to run CommonCrypto in the Simulator only
 1. `cd /Users/xcodeserver/Documents/XcodeHelpers/`
 2. Copy GenerateCommonCryptoModule script and paste it into /Users/xcodeserver/Documents/XcodeHelpers/ 
 2. Run the script in terminal  
-`./GenerateCommonCryptoModule iphonesimulator10.X .` Don't forget to replace the "X"
+`./GenerateCommonCryptoModule iphonesimulatorXX.X .` Don't forget to replace the "X"
 
 > It is not required to use the same method on development and build server. 
 

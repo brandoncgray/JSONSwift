@@ -20,7 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         
         // EncryptDatabase set to true will force encrypt all data
-        //JSONSetup.encryptDatabase(true)
+        JSONSetup.database(true)
         
         // Load saved data
         EmployeeModel.data.load()
