@@ -6,7 +6,7 @@
 ![Swift](http://img.shields.io/badge/swift-4.0.2-brightgreen.svg)
 ![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
 ![Swift](http://img.shields.io/badge/swift-3.1-brightgreen.svg)  
-![macOS](https://img.shields.io/badge/macOS-10.13, 10.12-brightgreen.svg)
+![macOS](https://img.shields.io/badge/macOS-10.13-brightgreen.svg)
 ![macOS](https://img.shields.io/badge/macOS-10.12-brightgreen.svg)
 
 <!--[![Slack Status](http://vapor.team/badge.svg)](http://slack.qutheory.io)-->
