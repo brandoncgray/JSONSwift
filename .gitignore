@@ -1,0 +1,6 @@
+*.xcuserstate
+Breakpoints_v2.xcbkptlist
+ExampleJSON Origin.xcscheme
+iOS/Example/ExampleJSON.xcodeproj/xcuserdata
+macOS/Examples/RMan3/RMan3.xcodeproj/xcuserdata
+macOS/Examples/ExampleJSONmacOS/ExampleJSONmacOS.xcodeproj/xcuserdata
