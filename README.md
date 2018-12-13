@@ -2,6 +2,7 @@
 ###### Developed by: Brandon Gray @ Perfect Reality Apps, LLC
 ![iOS](https://img.shields.io/badge/iOS-Supported-brightgreen.svg)
 ![macOS](https://img.shields.io/badge/macOS-Supported-brightgreen.svg)  
+![Swift](http://img.shields.io/badge/swift-4.2-brightgreen.svg) 
 ![Swift](http://img.shields.io/badge/swift-4.1-brightgreen.svg)
 ![Swift](http://img.shields.io/badge/swift-4.0.2-brightgreen.svg)
 ![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
@@ -245,10 +246,44 @@ JSONSetup.use(unixTimestamp: true)
 	JSONSetup.use(unixTimestamp: false)
 	```
 	
+### Appstore
+
+You will need to run this build script, it loops through the frameworks embedded in the application and removes unused architectures.
+
+```swift
+# This script loops through the frameworks embedded in the application and
+# removes unused architectures.
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+EXTRACTED_ARCHS=()
+
+for ARCH in $ARCHS
+do
+echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+done
+
+echo "Merging extracted architectures: ${ARCHS}"
+lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+rm "${EXTRACTED_ARCHS[@]}"
+
+echo "Replacing original executable with thinned version"
+rm "$FRAMEWORK_EXECUTABLE_PATH"
+mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+
+```
+
 ### Errors
 
 If you run into a code signing issue us the **--deep** flag in the **Signing** section of your projects build settings section
-> I havent had to do this with iOS but I have to do it with macOS you may need to do it with iOS if the AppStore has an issue with it.
+> I havent had to do this with iOS but I do have to do it with macOS, you may need to do it with iOS if the AppStore has an issue with it.
 
 ```
 //:configuration = Debug
