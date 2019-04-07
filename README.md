@@ -282,7 +282,7 @@ done
 
 ### Errors
 
-If you run into a code signing issue us the **--deep** flag in the **Signing** section of your projects build settings section
+If you run into a code signing issue use the **--deep** flag in the **Signing** section of your projects build settings section
 > I havent had to do this with iOS but I do have to do it with macOS, you may need to do it with iOS if the AppStore has an issue with it.
 
 ```

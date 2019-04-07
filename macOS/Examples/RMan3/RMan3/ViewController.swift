@@ -2,8 +2,7 @@
 
 import Cocoa
 
-
-class ViewController: NSViewController, NSTextFieldDelegate, NSTableViewDelegate {
+class ViewController: NSViewController, NSTextFieldDelegate, NSTableViewDelegate,NSControlTextEditingDelegate {
     @objc var employees = EmployeeModel.data.employees
     var index = Int()
     @IBOutlet weak var amount: NSTextField!
@@ -12,7 +11,7 @@ class ViewController: NSViewController, NSTextFieldDelegate, NSTableViewDelegate
         super.viewDidLoad()
     }
 
-    override func controlTextDidChange(_ obj: Notification) {
+    func controlTextDidChange(_ obj: Notification) {
         let textField = obj.object as! NSTextField
         switch textField {
         case amount:
@@ -22,6 +21,7 @@ class ViewController: NSViewController, NSTextFieldDelegate, NSTableViewDelegate
             print("default")
         }
     }
+
     @IBAction func rowSelected(_ sender: NSTableView) {
         guard sender.selectedRow >= 0 else { return }
         index = sender.selectedRow
