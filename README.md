@@ -2,11 +2,15 @@
 ###### Developed by: Brandon Gray @ Perfect Reality Apps, LLC
 ![iOS](https://img.shields.io/badge/iOS-Supported-brightgreen.svg)
 ![macOS](https://img.shields.io/badge/macOS-Supported-brightgreen.svg)  
+![Swift](http://img.shields.io/badge/swift-5.1.3-brightgreen.svg)
+![Swift](http://img.shields.io/badge/swift-5.1-brightgreen.svg)
+![Swift](http://img.shields.io/badge/swift-5.0-brightgreen.svg)  
 ![Swift](http://img.shields.io/badge/swift-4.2-brightgreen.svg) 
 ![Swift](http://img.shields.io/badge/swift-4.1-brightgreen.svg)
 ![Swift](http://img.shields.io/badge/swift-4.0.2-brightgreen.svg)
-![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)
+![Swift](http://img.shields.io/badge/swift-4.0-brightgreen.svg)  
 ![Swift](http://img.shields.io/badge/swift-3.1-brightgreen.svg)  
+![macOS](https://img.shields.io/badge/macOS-10.14-brightgreen.svg)
 ![macOS](https://img.shields.io/badge/macOS-10.13-brightgreen.svg)
 ![macOS](https://img.shields.io/badge/macOS-10.12-brightgreen.svg)
 
